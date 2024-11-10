@@ -1,1 +1,142 @@
 
+/* styles.css */
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #22549b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+/* Hover state for navigation */
+nav ul li a:hover {
+    background-color: #1a4287;  /* Slightly darker blue for hover */
+    border-radius: 4px;
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    padding: 40px;
+    font-size: 20px;
+    background-color: wheat;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Custom Classes */
+.yell {
+    background-color: #22549b;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.pleaseeee {
+    font-size: 25px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: blue;
+    font-family: Arial;
+    font-size: 16px;
+    overflow: auto;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: bisque;
+}
+
+/* Mobile Responsiveness */
+
+/* Smaller screens (phones) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack navigation items vertically */
+        align-items: center;  /* Center the links */
+    }
+
+    nav ul li {
+        margin: 10px 0;  /* Add margin between links */
+    }
+
+    main {
+        padding: 20px;  /* Less padding for mobile */
+    }
+
+    .box {
+        width: 100%;  /* Make the box take full width */
+        height: auto;  /* Allow the box to adjust height based on content */
+    }
+
+    .yell {
+        font-size: 22px;  /* Smaller font size for mobile */
+    }
+
+    .pleaseeee {
+        font-size: 20px;  /* Adjust font size for better readability */
+    }
+}
+
+/* Larger screens (desktops and tablets) */
+@media (min-width: 769px) {
+    main {
+        padding: 40px;  /* More padding for larger screens */
+    }
+
+    .box {
+        width: 300px;  /* Set a fixed width for the box */
+    }
+  }
